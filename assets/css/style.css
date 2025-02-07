@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-image: url('../images/fundo.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    
+}
+
+header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.container1 {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #23272a;
+}
+
+.btn-secondary {
+    background-color: #23272a;
+    color: #fff ;
+    margin-left: 10px;
+}
+
+/* Seção principal */
+
+.container {
+    max-width: 1200px; /* Limite a largura máxima do conteúdo */
+    margin: 0 auto;    /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px;   /* Adiciona margem vazia nas laterais */
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 10px;  /* Reduz o espaçamento interno */
+    
+}
+
+.feature img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.feature .text {
+    max-width: 30%;
+    padding: 0 10px;
+}
+
+.feature p {
+    font-size: 14px;
+}
+
+
+
+/* Centralizando a última div */
+.feature.center {
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature.center .text {
+    max-width: 60%;
+}
+
+.feature.center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Aplicando a fonte especial apenas no h1 da última div */
+.feature.center h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #23272a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: left; /* Alinha o texto do header à esquerda */
+        padding: 40px 20px; /* Ajusta o padding */
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 40px; /* Tamanho menor do texto em telas pequenas */
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px; /* Adiciona espaço entre os botões */
+    }
+
+    .container1 {
+        max-width: 90%; /* Reduz a largura em dispositivos menores */
+    }
+
+    .feature {
+        flex-direction: column; /* Muda o layout para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .feature img {
+        max-width: 100%; /* Faz a imagem ocupar a largura total disponível */
+        margin: 10px 0; /* Adiciona espaço entre a imagem e o texto */
+    }
+
+    .feature .text {
+        max-width: 100%; /* Aumenta a largura do texto */
+        padding: 0; /* Remove padding para melhor alinhamento */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: left; /* Alinha o texto do header à esquerda */
+        padding: 40px 10px; /* Mais espaço nas laterais em telas menores */
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 32px; /* Tamanho menor ainda para dispositivos muito pequenos */
+    }
+
+    .feature {
+        flex-direction: column; /* Muda o layout para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .feature img {
+        max-width: 100%; /* Faz a imagem ocupar a largura total disponível */
+        margin: 10px 0; /* Adiciona espaço entre a imagem e o texto */
+    }
+
+    .feature .text {
+        max-width: 100%; /* Aumenta a largura do texto */
+        padding: 0; /* Remove padding para melhor alinhamento */
+    }
+}
