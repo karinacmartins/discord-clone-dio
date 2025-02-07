@@ -65,9 +65,18 @@ button {
     background-color: #fff;
     color: #23272a;
 }
+.btn-primary:hover {
+    background-color: #cecece;
+    color: #23272a;
+}
 
 .btn-secondary {
     background-color: #23272a;
+    color: #fff ;
+    margin-left: 10px;
+}
+.btn-secondary:hover {
+    background-color: #4b4c4d;
     color: #fff ;
     margin-left: 10px;
 }
@@ -75,9 +84,9 @@ button {
 /* Seção principal */
 
 .container {
-    max-width: 1200px; /* Limite a largura máxima do conteúdo */
-    margin: 0 auto;    /* Centraliza o conteúdo horizontalmente */
-    padding: 0 20px;   /* Adiciona margem vazia nas laterais */
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
 }
 
 .feature {
@@ -85,7 +94,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
-    padding: 0 10px;  /* Reduz o espaçamento interno */
+    padding: 0 10px;  
     
 }
 
@@ -152,66 +161,66 @@ footer p {
 
 @media (max-width: 768px) {
     header {
-        text-align: left; /* Alinha o texto do header à esquerda */
-        padding: 40px 20px; /* Ajusta o padding */
+        text-align: left; 
+        padding: 40px 20px; 
     }
 
     header h1 {
         text-align: left;
-        font-size: 40px; /* Tamanho menor do texto em telas pequenas */
+        font-size: 40px; 
     }
 
     .buttons {
         margin-top: 20px;
         display: flex;
-        gap: 10px; /* Adiciona espaço entre os botões */
+        gap: 10px; 
     }
 
     .container1 {
-        max-width: 90%; /* Reduz a largura em dispositivos menores */
+        max-width: 90%; 
     }
 
     .feature {
-        flex-direction: column; /* Muda o layout para coluna em telas pequenas */
-        align-items: center; /* Centraliza os itens */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .feature img {
-        max-width: 100%; /* Faz a imagem ocupar a largura total disponível */
-        margin: 10px 0; /* Adiciona espaço entre a imagem e o texto */
+        max-width: 100%; 
+        margin: 10px 0; 
     }
 
     .feature .text {
-        max-width: 100%; /* Aumenta a largura do texto */
-        padding: 0; /* Remove padding para melhor alinhamento */
+        max-width: 100%; 
+        padding: 0; 
     }
 }
 
 @media (max-width: 480px) {
     header {
-        text-align: left; /* Alinha o texto do header à esquerda */
-        padding: 40px 10px; /* Mais espaço nas laterais em telas menores */
+        text-align: left; 
+        padding: 40px 10px; 
     }
 
     header h1 {
         text-align: left;
-        font-size: 32px; /* Tamanho menor ainda para dispositivos muito pequenos */
+        font-size: 32px; 
     }
 
     .feature {
-        flex-direction: column; /* Muda o layout para coluna em telas pequenas */
-        align-items: center; /* Centraliza os itens */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .feature img {
-        max-width: 100%; /* Faz a imagem ocupar a largura total disponível */
-        margin: 10px 0; /* Adiciona espaço entre a imagem e o texto */
+        max-width: 100%; 
+        margin: 10px 0; 
     }
 
     .feature .text {
-        max-width: 100%; /* Aumenta a largura do texto */
-        padding: 0; /* Remove padding para melhor alinhamento */
+        max-width: 100%; 
+        padding: 0;
     }
 }
